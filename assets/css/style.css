@@ -103,6 +103,7 @@ Kiểu dáng? Kiểu chữ?
     left: 0;
     right: 0;
     position: fixed;
+    z-index: 9;
 }
 
 #nav {
@@ -208,6 +209,7 @@ Kiểu dáng? Kiểu chữ?
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 64px 16px 112px;
 }
@@ -506,3 +508,4 @@ Kiểu dáng? Kiểu chữ?
         transform: translateY(0px);
     }
 }
+
