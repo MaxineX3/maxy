@@ -80,6 +80,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 /* 
 Từ ngoài vào trong - từ trên xuống dưới
 Tổng quan -> chi tiết
@@ -97,12 +101,12 @@ Kiểu dáng? Kiểu chữ?
 }
 
 #header {
-    background-color: black;
+    position: fixed;
     height: 46px;
     top: 0;
     left: 0;
     right: 0;
-    position: fixed;
+    background-color: black;
     z-index: 9;
 }
 
@@ -136,6 +140,7 @@ Kiểu dáng? Kiểu chữ?
     line-height: 46px;
     padding: 0 24px;
     display: inline-block;
+    width: 100%;
 }
 
 #nav > li:hover > a, #nav .subnav li:hover {
@@ -155,17 +160,33 @@ Kiểu dáng? Kiểu chữ?
     padding: 0 16px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
 
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 23px;
     cursor: pointer;
 }
 
+#header .menu-icon,
 #header .search-icon {
     color: white;
     font-size: 20px;
     line-height: 46px;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: black;
 }
 
 #header .search-btn:hover {
@@ -177,8 +198,15 @@ Kiểu dáng? Kiểu chữ?
 #slider {
     position: relative;
     margin-top: 46px;
-    padding-top: 50%;
-    background: url(/assets/img/slider/la.jpg) top center / cover no-repeat;
+    /* padding-top: 50%; */
+    /* background: url(/assets/img/slider/la.jpg) top center / cover no-repeat; */
+}
+
+#slider .slider-img {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
 #slider .text-content {
@@ -199,6 +227,7 @@ Kiểu dáng? Kiểu chữ?
 #slider .text-description {
     font-size: 15px;
     margin: 15px 0;
+    padding: 10px 0;
 }
 
 /* The band */
@@ -260,7 +289,7 @@ Kiểu dáng? Kiểu chữ?
 
 .ticket-list {
     background-color: white;
-    margin: 30px 0;
+    margin: 30px 0 15px;
 }
 
 .ticket-list li {
@@ -293,11 +322,11 @@ Kiểu dáng? Kiểu chữ?
 /* places */
 
 .place-list {
-
+    margin-top: 16px;
 }
 
 .place-item {
-    padding-bottom: 48px;
+    padding-bottom: 16px;
 }
 
 .place-img {
