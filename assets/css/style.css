@@ -36,6 +36,8 @@ html {
     display: inline-block;
     border: none;
     cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -228,6 +230,7 @@ Kiểu dáng? Kiểu chữ?
     font-size: 15px;
     margin: 15px 0;
     padding: 10px 0;
+    text-shadow: 0 0 2px black;
 }
 
 /* The band */
@@ -371,6 +374,15 @@ Kiểu dáng? Kiểu chữ?
 .contact-info {
     font-size: 18px;
     line-height: 1.5;
+}
+
+.contact-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-info i[class*="ti-"] {
